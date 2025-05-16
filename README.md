@@ -1,13 +1,13 @@
 # To-Do App
 
-Welcome to the To-Do App repository! This project is designed to help users organize their tasks efficiently and effectively.
+Welcome to the To-Do App repository! This project is designed to help users organize their tasks efficiently and effectively using Python.
 
 ## Features
 
 - Add, edit, and delete tasks.
 - Mark tasks as completed.
-- View tasks by categories or due dates.
-- Responsive and user-friendly interface.
+- View pending and completed tasks.
+- Lightweight and user-friendly command-line interface.
 
 ## Installation
 
@@ -19,19 +19,34 @@ Welcome to the To-Do App repository! This project is designed to help users orga
    ```bash
    cd todo
    ```
-3. Install dependencies:
+3. (Optional) Create and activate a virtual environment:
    ```bash
-   npm install
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
    ```
-4. Run the development server:
+4. Install dependencies:
    ```bash
-   npm start
+   pip install -r requirements.txt
+   ```
+5. Run the application:
+   ```bash
+   python main.py
    ```
 
 ## Usage
 
-1. Open the app in your web browser at `http://localhost:3000`.
-2. Start adding your tasks and organizing your day!
+Follow the on-screen instructions to add, complete, and manage your tasks.  
+Your tasks will be saved and organized for easy access every time you run the application!
+
+## Folder Structure
+
+```
+todo/
+├── main.py              # Entry point of the application
+├── tasks.py             # Core logic for managing tasks
+├── requirements.txt     # Dependencies for the project
+└── README.md            # Documentation
+```
 
 ## Contributing
 
@@ -52,6 +67,4 @@ Contributions are welcome! If you'd like to contribute, please follow these step
    ```
 5. Open a pull request.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
